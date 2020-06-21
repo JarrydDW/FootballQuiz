@@ -173,11 +173,11 @@ function scoreRender(){
 
     const scorePerCent = Math.round(100*score/questions.length);
 
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-        (scorePerCent >= 60) ? "img/4.png" :
-            (scorePerCent >= 40) ? "img/3.png" :
-                (scorePerCent >= 20) ? "img/2.png" :
-                    "img/1.png";
+    let img = (scorePerCent >= 80) ? "image/5.png" :
+        (scorePerCent >= 60) ? "image/4.png" :
+            (scorePerCent >= 40) ? "image/3.png" :
+                (scorePerCent >= 20) ? "image/2.png" :
+                    "image/1.png";
 
     scoreDiv.innerHTML = "<img src= "+ img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p> ";
